@@ -1,1 +1,21 @@
 
+Decide on a framework to implement the Agregator or a composite Microservice using SAGA design pattern.
+
+Axon is one framework that impressed me so far but it introduces its own challenges. It's primary focus is on CQRS. Our primary focus should be the SAGA and Event Driven Microservice patterns without getting entangled in CQRS or DDD. Also other concern is that the framework does not have DDL for Oracle DataBase for example. if we want to deploy the framework… we will have to generate our own DDL from running it locally with an in-memory database first. 
+
+If we are able to carve out and deploy the Event-Driven capabilities of the Axon Aggregator and Saga with our external Integration micro-services, I think it will fit our use-cases very well. I would also like to see if we can use the service to integrate with event streaming platforms like KAFKA in the future to generate Audit events and send them to DSC. 
+Axon Framework ( Open Source)
+https://github.com/AxonFramework/AxonFramework
+Axon SAGA Reference
+https://docs.axoniq.io/reference-guide/v/3.1/part-ii-domain-logic/sagas
+Axon - SAGA pattern example
+https://github.com/AxonFramework/Axon-trader
+Axon-Trader Wiki
+https://github.com/AxonFramework/Axon-trader/wiki
+If this becomes too complex to customize this framework for our needs, we may have to fall back to other alternative frameworks or we will have to build it from scratch just as a simple composite microservice. 
+
+Eventuate
+https://github.com/eventuate-local/eventuate-local
+https://github.com/eventuate-tram/eventuate-tram-core
+Eclipse-lra
+https://github.com/eclipse/microprofile-lra/blob/master/spec/src/main/asciidoc/microprofile-lra-spec.adoc
