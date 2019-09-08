@@ -72,7 +72,7 @@ Sample SpecJson:
     }
 ]
 
-Clieck on Transform button:
+Click on Transform button:
 
 OutputJson:
 
