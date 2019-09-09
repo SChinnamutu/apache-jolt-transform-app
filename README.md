@@ -1,6 +1,8 @@
 Example Spring Boot MVC Application
 ===================================
 
+
+
 Requirements
 ------------
 * [Java Platform (JDK) 7](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
@@ -8,6 +10,10 @@ Requirements
 
 Quick start
 -----------
+
+Clone the project and unzip project and place it in folder.
+Go inside project folder.
+
 1. `mvn clean install -DskipTests`
 2. `java -jar target/keybank-jolt-transform-app-1.0-SNAPSHOT.jar`
 3. Point your browser to [http://localhost:8090/jolt/]
